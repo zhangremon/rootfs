@@ -1,0 +1,11 @@
+进入linux系统
+
+1、cd /
+2、flash_eraseall /dev/mtd1
+3、mount -t yaffs2 /dev/mtdblock1 /mnt/
+4、ifconfig eth1 192.168.1.1
+5、tftp 192.168.1.1 -gr rootfs.tar 
+6、tar -xvf kyrootfs.tar -C /mnt
+
+重启系统即可
+
